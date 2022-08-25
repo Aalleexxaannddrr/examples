@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+.tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 18.5px;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+
+  &:hover {
+    background: linear-gradient(80deg, #593Ea4, #70b1c8);
+  }
+
+  &:hover .tab__close {
+    display: block;
+    background-color: transparent;
+    border: none;
+    width: 8px;
+    height: 8px;
+    background-image: url("close.svg");
+  }
+
+  &__name {
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    opacity: 0.4;
+  }
+
+  &__name_active {
+    opacity: 1;
+    color: black;
+  }
+
+  &__close {
+    display: none;
+    margin-left: 8px;
+  }
+
+  &__close_active {
+    display: block;
+    background-color: transparent;
+    width: 8px;
+    height: 8px;
+    border: none;
+    background-image: url("close.svg");
+  }
+}
+
+.tab_selected {
+  background: white;
+  border-radius: 4px 4px 0 0;
+}

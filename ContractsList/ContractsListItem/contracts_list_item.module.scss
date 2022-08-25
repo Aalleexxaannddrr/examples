@@ -1,0 +1,42 @@
+.contracts_list_item {
+  width: 90%;
+  margin: 0 auto;
+
+  &__preview {
+    background-color: #888b8f;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &:hover {
+      background-color: #6a717e;
+    }
+  }
+
+  &__name_input {
+    border: none;
+
+    &:disabled {
+      background-color: transparent;
+      color: #000;
+    }
+  }
+}
+
+.number_of_request {
+  background-color: #3a91b2;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  margin: 5px;
+  color: white;
+}

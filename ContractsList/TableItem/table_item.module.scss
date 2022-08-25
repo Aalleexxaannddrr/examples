@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+.table_item {
+  &__name_input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: black;
+  }
+
+  &__first_td {
+    display: flex;
+    align-items: center;
+    height: 51px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    padding-left: 34px;
+  }
+
+  &__second_td {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #81807C;
+  }
+
+  &__last_td {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #81807C;
+    text-align: right;
+    padding-right: 15px;
+  }
+
+  &__preview {
+    width: 33px;
+    height: 31px;
+    margin-right: 7px;
+    border-radius: 2px;
+  }
+
+  &__preview_none {
+    display: none;
+  }
+
+  &__preview_sub {
+    width: 33px;
+    height: 31px;
+    background-color: #C4C4C4;
+    border-radius: 2px;
+    margin-right: 7px;
+  }
+}
+
+.table_item_active {
+  background-color: rgba(89, 62, 164, 0.18);
+}

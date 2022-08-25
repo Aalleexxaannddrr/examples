@@ -1,0 +1,36 @@
+.tabs {
+  display: flex;
+  height: 100%;
+
+  &__tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 18.5px;
+    height: 100%;
+
+    &:hover {
+      background: linear-gradient(80deg, #593Ea4, #70b1c8);
+    }
+
+    &:hover .tabs__svg {
+      opacity: 1;
+    }
+  }
+
+  &__tab_selected {
+    background: linear-gradient(80deg, #593Ea4, #70b1c8);
+  }
+
+  &__svg {
+    opacity: 0.4;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &_svg_active {
+    opacity: 1;
+  }
+}

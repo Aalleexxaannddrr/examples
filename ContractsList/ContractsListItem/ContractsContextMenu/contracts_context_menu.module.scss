@@ -1,0 +1,31 @@
+.context_menu {
+  background-color: #1c3d48;
+  position: absolute;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  z-index: 100;
+
+  &__item {
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+
+    &:hover {
+      background-color: #214b59
+    }
+  }
+}
+
+.number_of_request {
+  background-color: #3a91b2;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  margin-left: 20px;
+}
